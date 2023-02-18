@@ -1,0 +1,259 @@
+*{
+  font-family: 'Poppins', sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  color:  #FFFFFF;
+  background: url(/images/8a6128f6802e2b5ca3af5841d291273a.jpg) center/cover no-repeat ;
+  height: 1600px;
+  opacity: 100%;
+}
+
+body::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 465px;
+  left: 0px;
+  top: 0px;
+  background: #253B51;
+  z-index: -1;
+  opacity: 87%;
+}
+
+
+.title {
+text-align: center;
+margin-top:100px ;
+}
+
+h1{
+  text-transform: uppercase;
+  margin: 0;
+  font-family: 'Staatliches';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 45px; }
+
+p{
+  margin:  0;
+  font-family: 'Poppins';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+#info {
+  width: 750px;
+  height: 133px;
+  background: #f67769;
+  border-radius: 20px 20px 0 0;
+  opacity: 80%;
+}
+
+#info h2 {
+  font-family: 'Staatliches';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 34px;
+  padding-top: 50px;
+}
+
+.page {
+  width: 750px;
+  margin: auto;
+}
+
+#logo {
+  margin-bottom: 32px;
+}
+
+form {
+  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+  opacity: 83%;
+  
+  padding: 30px 64px 0;
+  gap: 32px;
+}
+
+fieldset {
+  color: #253B51;
+  border: none;
+}
+
+fieldset label {
+  padding-bottom: 8px;
+}
+
+#name {
+  display: flex;
+  gap: 22px;
+  padding-bottom: 20px;
+}
+
+#name input {
+  padding: 10px;
+}
+
+fieldset .input-wrapper {
+  display: flex;
+  flex-direction: column;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+span {
+  font-size: 12px;
+  line-height: 20px;
+  color: #cbc5d9;
+}
+
+legend {
+  text-align: center;
+  font-family: 'Staatliches';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 34px;
+
+  border-bottom: 1px solid  #cbc5d9;
+  width: 622px;
+  padding-bottom: 8px;
+  margin-bottom: 32px;
+}
+
+
+.input-wrapper label span {
+  margin-left: 9px;
+}
+
+
+#name .input-wrapper input  {
+  background: #FAFAFC;
+  border: 1px solid #cbc5d9;
+  border-radius: 8px;
+  box-sizing: border-box;
+  Width: 300px;
+  Height: 55.53px;
+}
+
+.input-wrapper input {
+  background: #FAFAFC;
+  border: 1px solid #cbc5d9;
+  border-radius: 8px;
+  box-sizing: border-box;
+  Width:622px;
+  Height:55px;
+  padding: 10px;
+}
+
+.input-wrapper input, 
+select, textarea {
+  padding: 10px;
+}
+
+.input-wrapper select {
+  appearance: none;
+  -webkit-appearance: none;
+  background: #FAFAFC;
+  border: 1px solid #cbc5d9;
+  border-radius: 8px;
+  box-sizing: border-box;
+  Width: 300px;
+  Height: 55px;
+  margin-bottom: 32px;
+}
+
+.input-wrapper textarea {
+  background: #FAFAFC;
+  border: 1px solid #cbc5d9;
+  border-radius: 8px;
+  box-sizing: border-box;
+  Width:608px;
+  Height:166px;
+}
+
+.checkbox-wrapper {
+  position: relative;
+  margin-top: 30px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.checkbox-wrapper input {
+  position: absolute;
+  height: 24px;
+  width: 24px;
+  opacity: 0;
+}
+  
+  .checkbox-wrapper label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+  
+  .checkbox-wrapper label::before {
+  content: '';
+  height: 24px;
+  width: 24px;
+  border: 1px solid #cbc5d9;
+  border-radius: 8px;
+}
+  
+  .checkbox-wrapper input:checked + label::before {
+  background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M9.00016 16.1698L4.83016 11.9998L3.41016 13.4098L9.00016 18.9998L21.0002 6.99984L19.5902 5.58984L9.00016 16.1698Z' fill='%2342D3FF'/%3E%3C/svg%3E%0A");
+}
+  
+  .checkbox-wrapper input:focus + label::before {
+  outline: 2px solid black;
+}
+
+
+.fieldset-wrapper .date input {
+  box-sizing: border-box;
+  width: 300px;
+  margin-right: 22px;
+}
+
+.fieldset-wrapper input {
+  width: 140px;
+  appearance: none;
+  -webkit-appearance: none;
+}
+
+.col .fieldset-wrapper{
+  display: flex;
+  gap: 10px;
+}
+
+footer {
+  background: #FFFFFF;
+  display: flex; 
+  flex-direction: column;
+  padding: 64px 64px;
+  border-radius: 0 0 20px 20px;
+  opacity: 83%;
+}
+
+footer .button {
+  height: 51px;
+  background:#F67669;
+  color:#FFFFFF;
+  border: none;
+  border-radius: 8px;
+  font-family: 'Staatliches';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 26px;
+}
+
